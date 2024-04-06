@@ -9,7 +9,7 @@ export const WalletConnectProvider = ({ children }) => {
     const network = WalletAdapterNetwork.Devnet
     const endpoint = useMemo(() => {
         if (network === WalletAdapterNetwork.Devnet) {
-            return 'https://wider-falling-sailboat.solana-devnet.quiknode.pro/0c9c8042987437d553b72791718bf67589cd100a/'
+            return 'https://api.devnet.solana.com'
         }
         return clusterApiUrl(network)
     }, [network])
